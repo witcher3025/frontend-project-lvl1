@@ -1,3 +1,5 @@
+/* eslint-disable no-console, import/extensions */
+
 import readlineSync from 'readline-sync';
 
 const getUserName = () => {
