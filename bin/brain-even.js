@@ -43,7 +43,8 @@ const getFormattedAnswer = (userAnswer) => userAnswer.trim().toLowerCase();
 
 const brainEvenCircle = () => {
   let count = 1;
-  while (count <= 3) {
+  const numberOfCorrectAnswer = 3;
+  while (count <= numberOfCorrectAnswer) {
     const number = numbersGenerator();
     question(number);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -59,7 +60,7 @@ const brainEvenCircle = () => {
     }
   }
 
-  if (count > 3) {
+  if (count > numberOfCorrectAnswer) {
     showSuccessMessage();
   }
 };
