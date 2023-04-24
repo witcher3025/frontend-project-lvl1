@@ -4,11 +4,12 @@
 
 import getUserName from '../src/cli.js';
 
-console.log('brain-games\nWelcome to the Brain Games!\n');
+console.log('brain-games');
 
 const greetings = () => {
+  console.log('\nWelcome to the Brain Games!');
   const nameUser = getUserName();
-  console.log(`Hello, ${nameUser}!`);
+  console.log(`Hello, ${nameUser}!\n`);
 };
 
 greetings();
