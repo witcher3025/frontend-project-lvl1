@@ -7,9 +7,9 @@ import getUserName from '../src/cli.js';
 console.log('brain-games');
 
 const greetings = () => {
-  console.log('\nWelcome to the Brain Games!');
+  console.log('Welcome to the Brain Games!');
   const nameUser = getUserName();
-  console.log(`Hello, ${nameUser}!\n`);
+  console.log(`Hello, ${nameUser}!`);
 };
 
 greetings();
