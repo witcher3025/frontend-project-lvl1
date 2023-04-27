@@ -2,12 +2,10 @@
 
 /* eslint-disable no-console, import/extensions */
 
-import { greetings, brainGames } from '../index.js';
+import { greetings, showRulesOfGame, brainGames } from '../index.js';
 
-const showRulesOfGame = () => {
-  console.log('What number is missing in the progression?');
-};
-
+const nameOfGame = 'brain-progression\n';
+const message = 'What number is missing in the progression?';
 const numbersGenerator = () => Math.ceil(Math.random() * 20);
 const progressionGenerator = () => Math.ceil(Math.random() * 10);
 const indexGenerator = () => Math.floor(Math.random() * 10);
@@ -48,9 +46,8 @@ const getCalculateHiddenNumber = (expression) => {
 };
 
 const brainProgression = () => {
-  console.log('brain-progression\n');
-  greetings();
-  showRulesOfGame();
+  greetings(nameOfGame);
+  showRulesOfGame(message);
   // Передаем в качестве параметров две функции: генерация выражения и вычисление
   // правильного ответа без их вызова. Сам вызов функций будет происходить уже внутри
   brainGames(getCreateExpression, getCalculateHiddenNumber);

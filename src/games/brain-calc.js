@@ -2,11 +2,10 @@
 
 /* eslint-disable no-console, import/extensions */
 
-import { greetings, brainGames } from '../index.js';
+import { greetings, showRulesOfGame, brainGames } from '../index.js';
 
-const showRulesOfGame = () => {
-  console.log('What is the result of the expression?');
-};
+const nameOfGame = 'brain-calc\n';
+const message = 'What is the result of the expression?';
 
 const numbersGenerator = () => Math.ceil(Math.random() * 100);
 const operatorGenerator = () => {
@@ -47,11 +46,8 @@ const getCalculateExpression = (expression) => {
 };
 
 const brainCalc = () => {
-  console.log('brain-calc\n');
-  greetings();
-  showRulesOfGame();
-  // Передаем в качестве параметров две функции: генерация выражения и вычисление
-  // правильного ответа без их вызова. Сам вызов функций будет происходить уже внутри
+  greetings(nameOfGame);
+  showRulesOfGame(message);
   brainGames(getCreateExpression, getCalculateExpression);
 };
 

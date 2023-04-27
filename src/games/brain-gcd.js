@@ -2,12 +2,10 @@
 
 /* eslint-disable no-console, import/extensions */
 
-import { greetings, brainGames } from '../index.js';
+import { greetings, showRulesOfGame, brainGames } from '../index.js';
 
-const showRulesOfGame = () => {
-  console.log('Find the greatest common divisor of given numbers.');
-};
-
+const nameOfGame = 'brain-gcd\n';
+const message = 'Find the greatest common divisor of given numbers.';
 const numbersGenerator = () => Math.ceil(Math.random() * 100);
 
 const getCreateExpression = () => {
@@ -36,9 +34,8 @@ const getCalculateDivider = (expression) => {
 };
 
 const brainGcd = () => {
-  console.log('brain-gcd\n');
-  greetings();
-  showRulesOfGame();
+  greetings(nameOfGame);
+  showRulesOfGame(message);
   // Передаем в качестве параметров две функции: генерация выражения и вычисление
   // правильного ответа без их вызова. Сам вызов функций будет происходить уже внутри
   brainGames(getCreateExpression, getCalculateDivider);
