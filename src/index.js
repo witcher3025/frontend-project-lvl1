@@ -6,10 +6,15 @@ import readlineSync from 'readline-sync';
 import getUserName from './cli.js';
 
 let nameUser = '';
-const greetings = () => {
+const greetings = (nameOfGames) => {
+  console.log(nameOfGames);
   console.log('Welcome to the Brain Games!');
   nameUser = getUserName();
   console.log(`Hello, ${nameUser}!`);
+};
+
+const showRulesOfGame = (message) => {
+  console.log(message);
 };
 
 const showMessageOfCorrect = () => console.log('Correct!');
@@ -52,5 +57,5 @@ const brainGames = (generateExpression, calculateAnswer) => {
 };
 
 export {
-  greetings, brainGames,
+  greetings, showRulesOfGame, brainGames,
 };

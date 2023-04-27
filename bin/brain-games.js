@@ -4,5 +4,4 @@
 
 import { greetings } from '../src/index.js';
 
-console.log('brain-games');
-greetings();
+greetings('brain-games');
