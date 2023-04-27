@@ -47,11 +47,11 @@ const brainProgression = () => {
       if (currentNumber === '..') {
         switch (i) {
           case 0:
-            progressionCount = (+nextNumber[i + 2] - +nextNumber) / 2;
+            progressionCount = +numbers[i + 2] - +nextNumber;
             hiddenElement = +nextNumber - progressionCount;
             break;
           case lengthColl - 1:
-            progressionCount = (+prevNumber - +numbers[i - 2]) / 2;
+            progressionCount = +prevNumber - +numbers[i - 2];
             hiddenElement = +prevNumber + progressionCount;
             break;
           default:
