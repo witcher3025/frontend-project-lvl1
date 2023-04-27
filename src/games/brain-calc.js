@@ -2,7 +2,7 @@
 
 /* eslint-disable no-console, import/extensions */
 
-import { greetings, brainEvenCircle } from '../index.js';
+import { greetings, brainGames } from '../index.js';
 
 const brainCalc = () => {
   console.log('brain-calc\n');
@@ -54,7 +54,7 @@ const brainCalc = () => {
 
   // Передаем в качестве параметров две функции: генерация выражения и вычисление
   // правильного ответа без их вызова. Сам вызов функций будет происходить уже внутри
-  brainEvenCircle(getCreateExpression, getCalculateExpression);
+  brainGames(getCreateExpression, getCalculateExpression);
 };
 
 export default brainCalc;

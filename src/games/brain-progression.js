@@ -2,7 +2,7 @@
 
 /* eslint-disable no-console, import/extensions */
 
-import { greetings, brainEvenCircle } from '../index.js';
+import { greetings, brainGames } from '../index.js';
 
 const brainProgression = () => {
   console.log('brain-progression\n');
@@ -69,7 +69,7 @@ const brainProgression = () => {
 
   // Передаем в качестве параметров две функции: генерация выражения и вычисление
   // правильного ответа без их вызова. Сам вызов функций будет происходить уже внутри
-  brainEvenCircle(getCreateExpression, getCalculateHiddenElement);
+  brainGames(getCreateExpression, getCalculateHiddenElement);
 };
 
 export default brainProgression;

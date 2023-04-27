@@ -2,7 +2,7 @@
 
 /* eslint-disable no-console, import/extensions */
 
-import { greetings, brainEvenCircle } from '../index.js';
+import { greetings, brainGames } from '../index.js';
 
 const brainEven = () => {
   console.log('brain-even\n');
@@ -22,7 +22,7 @@ const brainEven = () => {
 
   // Передаем в качестве параметров две функции: генерация числа и вычисление правильного ответа
   // без их вызова. Сам вызов функций будет происходить уже внутри
-  brainEvenCircle(numbersGenerator, isEven);
+  brainGames(numbersGenerator, isEven);
 };
 
 export default brainEven;

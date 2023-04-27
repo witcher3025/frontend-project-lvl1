@@ -27,7 +27,7 @@ const getFormattedAnswer = (userAnswer) => userAnswer.trim().toLowerCase();
 
 // В качестве параметров передаются без вызова две функции - генерация выражения
 // и расчет правильного ответа. Сам их вызов осуществляется уже внутри
-const brainEvenCircle = (generateExpression, calculateAnswer) => {
+const brainGames = (generateExpression, calculateAnswer) => {
   let currentRound = 1;
   const numberOfRounds = 3;
   while (currentRound <= numberOfRounds) {
@@ -52,5 +52,5 @@ const brainEvenCircle = (generateExpression, calculateAnswer) => {
 };
 
 export {
-  greetings, brainEvenCircle,
+  greetings, brainGames,
 };

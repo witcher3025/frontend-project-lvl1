@@ -2,7 +2,7 @@
 
 /* eslint-disable no-console, import/extensions */
 
-import { greetings, brainEvenCircle } from '../index.js';
+import { greetings, brainGames } from '../index.js';
 
 const brainPrime = () => {
   console.log('brain-prime\n');
@@ -31,7 +31,7 @@ const brainPrime = () => {
 
   // Передаем в качестве параметров две функции: генерация числа и вычисление правильного ответа
   // без их вызова. Сам вызов функций будет происходить уже внутри
-  brainEvenCircle(numbersGenerator, isPrime);
+  brainGames(numbersGenerator, isPrime);
 };
 
 export default brainPrime;
