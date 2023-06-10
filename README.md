@@ -1,15 +1,13 @@
 <h1>Educational project "Brain games"</h1>
 
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/witcher3025/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/witcher3025/frontend-project-lvl1/actions)
-
-<a href="https://codeclimate.com/github/witcher3025/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/d3cf35f21016e8dabf68/maintainability" /></a>
+[![Actions Status](https://github.com/witcher3025/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/witcher3025/frontend-project-lvl1/actions) <a href="https://codeclimate.com/github/witcher3025/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/d3cf35f21016e8dabf68/maintainability" /></a>
 
 <h2>About</h2>
 <p>"Brain games" is a set of five console games based on the popular mobile brain-pumping apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again.</p>
 
 <h2>Usage</h2>
-<p>You should have Node.js installed before proceeding. Only test JS against v19 and on macOS.</p>
+<p>You should have Node.js installed before proceeding. Only test JS against v19 and on WSL.</p>
 
 <h2>How to play:</h2>
 <p>You can type make brain-games to get only hello from the game. See for example:</p>
